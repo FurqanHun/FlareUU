@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool FlareUU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Dark background color */
+            color: #ccc; /* Light text color */
+            display: flex;
+            flex-direction: column; /* Ensure content stacks vertically */
+            align-items: center;
+            justify-content: center; /* Center content vertically */
+            height: 100vh;
+            margin: 0;
+            padding: 0; /* Remove padding */
+            overflow: hidden; /* Prevent scrolling */
+        }
+        .top-bar {
+            width: 100%;
+            background-color: #333; /* Dark background for top bar */
+            padding: 10px 0; /* Vertical padding */
+            text-align: center;
+            margin-top: -2.5rem;
+        }
+        .top-bar h1 {
+            margin: 0; /* Remove default margin */
+            color: #fff; /* White text color */
+        }
+        #entry {
+            background-color: #333; /* Darker container background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Slightly stronger shadow */
+            max-width: 500px;
+            max-height: calc(100vh - 150px); /* Adjusted max-height to fit within viewport */
+            overflow: auto; /* Add scrollbars if content exceeds max-height */
+            text-align: center;
+            margin-top: 20px; /* Add margin to separate from the top bar */
+        }
+        #image {
+            max-width: 100%;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        #title {
+            font-size: 24px;
+            color: #fff; /* White title text */
+            margin-bottom: 10px;
+        }
+        #description {
+            font-size: 16px;
+            color: #ccc; /* Lighter description text */
+        }
+        #author, #status {
+            font-size: 14px;
+            color: #999; /* Diminished color for author and status */
+            margin-top: 8px;
+        }
+        #udm14 {
+            color: #ccc; /* Light text color */
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>FlareUU</h1>
+    </div>
+    <div id="entry">
+        <img id="image" src="./assets/op_pfp.jpg" alt="Placeholder Image">
+        <h2 id="title">WebViewer</h2>
+        <p id="description">The sole purpose of this extension/entry is to provide you a way to access Aniyomi's WebViewer instance which then can be used to mimic legitimate browser history.</p>
+        <p id="author">- 0xQan</p>
+        <p id="status">Ongoing</p>
+    </div>
+
+    <a href="https://udm14.com" id="udm14">UDM14 - The disenshittification of konami code</a>
+</body>
+</html>
